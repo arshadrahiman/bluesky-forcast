@@ -30,7 +30,7 @@ class MyApp extends StatelessWidget {
           title: 'Webtree Forecast',
           debugShowCheckedModeBanner: false,
           onGenerateRoute: AppRouter.generateRoute,
-          initialRoute: splashRoute,
+          initialRoute: homeRoute,
         );
       },
     );

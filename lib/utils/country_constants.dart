@@ -1,12 +1,6 @@
 import 'package:webtree_forcast/models/country_model.dart';
 
 List<CountryModel> countriesConstants = [
-  CountryModel("Manglore", "Asia", -41.2865, 174.7762),
-  CountryModel("Kochi", "Asia", -41.2865, 174.7762),
-  CountryModel("Calicut", "Asia", -41.2865, 174.7762),
-  CountryModel("Banglore", "Asia", -41.2865, 174.7762),
-  CountryModel("Mumbai", "Asia", -41.2865, 174.7762),
-  CountryModel("Chennai", "Asia", -41.2865, 174.7762),
   CountryModel("Berlin", "Europe", 52.5235, 13.4115),
   CountryModel("Paris", "Europe", 48.8567, 2.3510),
   CountryModel("London", "Europe", 51.5002, -0.1262),

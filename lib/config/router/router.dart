@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:webtree_forcast/config/router/router_constants.dart';
-import 'package:webtree_forcast/view/screens/home/homescreen.dart';
-import 'package:webtree_forcast/view/screens/search/searchscreen.dart';
-import 'package:webtree_forcast/view/screens/splash/splashscreen.dart';
+import 'package:webtree_forcast/view/home/homescreen.dart';
+import 'package:webtree_forcast/view/search/searchscreen.dart';
+import 'package:webtree_forcast/view/splash/splashscreen.dart';
 
 class AppRouter {
   static MaterialPageRoute generateRoute(RouteSettings settings) {

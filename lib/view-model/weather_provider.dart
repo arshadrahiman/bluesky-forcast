@@ -8,7 +8,7 @@ import 'package:webtree_forcast/models/weathercode_model.dart';
 import 'package:webtree_forcast/service/weather_service.dart';
 import 'package:webtree_forcast/utils/country_constants.dart';
 import 'package:webtree_forcast/utils/weathercode_constants.dart';
-import 'package:webtree_forcast/view/screens/widget/snackbar.dart';
+import 'package:webtree_forcast/view/widget/snackbar.dart';
 
 class WeatherProvider extends ChangeNotifier {
   bool _isLoading = true;

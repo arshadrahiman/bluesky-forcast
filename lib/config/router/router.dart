@@ -7,13 +7,13 @@ import 'package:webtree_forcast/view/screens/splash/splashscreen.dart';
 class AppRouter {
   static MaterialPageRoute generateRoute(RouteSettings settings) {
     switch (settings.name) {
-      case splashRoute:
+      case AppNamedRoute.splashRoute:
         return MaterialPageRoute(builder: (_) => const SplashScreen());
 
-      case homeRoute:
+      case AppNamedRoute.homeRoute:
         return MaterialPageRoute(builder: (_) => const HomeScreen());
 
-      case searchRoute:
+      case AppNamedRoute.searchRoute:
         return MaterialPageRoute(builder: (_) => const SearchScreen());
 
       default:

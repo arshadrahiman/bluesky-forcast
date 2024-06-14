@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 import 'package:webtree_forcast/config/router/router.dart';
 import 'package:webtree_forcast/config/router/router_constants.dart';
+import 'package:webtree_forcast/config/themes.dart';
 import 'package:webtree_forcast/view-model/theme_provider.dart';
 import 'package:webtree_forcast/view-model/weather_provider.dart';
 
@@ -29,8 +30,11 @@ class MyApp extends StatelessWidget {
         return MaterialApp(
           title: 'Webtree Forecast',
           debugShowCheckedModeBanner: false,
+          theme: AppTheme.lightTheme,
+          darkTheme: AppTheme.darkTheme,
+          themeMode: themeNotifier.themMode,
           onGenerateRoute: AppRouter.generateRoute,
-          initialRoute: homeRoute,
+          initialRoute: AppNamedRoute.homeRoute,
         );
       },
     );

@@ -19,26 +19,38 @@ class HomeScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Consumer<WeatherProvider>(
       builder: (context, weatherNotifier, child) {
+        List todayWeather = weatherNotifier.todayWeather;
+        WeatherModel current = weatherNotifier.getLoadedWeather;
+        List futureWeather = weatherNotifier.futureDayWeather;
         return Scaffold(
-          appBar: AppBar(
-            leading: GestureDetector(
-                onTap: () {
-                  Navigator.pushNamedAndRemoveUntil(
-                    context,
-                    searchRoute,
-                    ModalRoute.withName(homeRoute),
-                    arguments: {},
-                  );
-                },
-                child: const Icon(Icons.arrow_back_ios_rounded)),
-          ),
-          body: SingleChildScrollView(
-            child: SizedBox(
-              height: MediaQuery.of(context).size.height,
-              width: MediaQuery.of(context).size.width,
+          body: SafeArea(
+            child: SingleChildScrollView(
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
+                  Row(
+                    mainAxisAlignment: MainAxisAlignment.spaceAround,
+                    children: [
+                      GestureDetector(
+                          onTap: () {
+                            Navigator.pushNamedAndRemoveUntil(
+                              context,
+                              AppNamedRoute.searchRoute,
+                              ModalRoute.withName(AppNamedRoute.homeRoute),
+                              arguments: {},
+                            );
+                          },
+                          child: const Icon(Icons.search)),
+                      Consumer<ThemeProvider>(
+                        builder: (context, themeNotifier, child) => IconButton(
+                          icon: themeNotifier.isDark
+                              ? const Icon(CupertinoIcons.sun_min_fill)
+                              : const Icon(CupertinoIcons.moon_stars_fill),
+                          onPressed: () => themeNotifier.switchTheme(),
+                        ),
+                      ),
+                    ],
+                  ),
                   const HomeAppbarRowWidget(),
                   const SizedBox(height: 10),
                   SizedBox(
@@ -53,15 +65,15 @@ class HomeScreen extends StatelessWidget {
                           MoreInfoSectionWidget(
                               icon: CupertinoIcons.globe,
                               title:
-                                  "title"),
+                                  "${current.latitude.toStringAsFixed(0)}/${current.longitude.toStringAsFixed(0)}"),
                           MoreInfoSectionWidget(
                               icon: CupertinoIcons.wind,
-                              title: "100 km/h"),
+                              title: "${todayWeather[3].toString()} km/h"),
                         ],
                       ),
                     ),
                   ),
-                  const SizedBox(height: 30),
+                  const SizedBox(height: 20),
                   Padding(
                     padding: elementAlignment,
                     child: Text(
@@ -71,6 +83,7 @@ class HomeScreen extends StatelessWidget {
                   ),
                   const SizedBox(height: 20),
                   const TodayListviewBuilderWidget(),
+                  const SizedBox(height: 20),
                   Padding(
                     padding: elementAlignment,
                     child: Text(
@@ -78,7 +91,24 @@ class HomeScreen extends StatelessWidget {
                       style: Theme.of(context).textTheme.labelMedium,
                     ),
                   ),
-               
+                  const SizedBox(height: 20),
+                  SizedBox(
+                    height: 200,
+                    child: ListView.builder(
+                      itemCount: futureWeather.length,
+                      physics: const BouncingScrollPhysics(),
+                      itemBuilder: (BuildContext context, int index) {
+                        WeatherCodeModel? weatherCodeModel = weatherNotifier
+                            .getWeatherCode(futureWeather[index][1]);
+                        return TomarrowWeatherRowWidget(
+                          title: futureWeather[index][0],
+                          icon: weatherCodeModel.iconData,
+                          maxTemp: futureWeather[index][2],
+                          minTemp: futureWeather[index][3],
+                        );
+                      },
+                    ),
+                  ),
                 ],
               ),
             ),

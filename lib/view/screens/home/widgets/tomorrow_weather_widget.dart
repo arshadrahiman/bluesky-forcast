@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:intl/intl.dart';
 import 'package:webtree_forcast/config/themes.dart';
 import 'package:webtree_forcast/utils/align_constants.dart';
-
+import 'package:webtree_forcast/view/screens/widget/weather_status.dart';
 
 class TomarrowWeatherRowWidget extends StatelessWidget {
   const TomarrowWeatherRowWidget(
@@ -31,6 +31,11 @@ class TomarrowWeatherRowWidget extends StatelessWidget {
           Row(
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
             children: [
+              WeatherStatusIconWidget(
+                iconData: icon,
+                iconSize: 30,
+                paddingLeft: 0,
+              ),
               const SizedBox(width: 50),
               Text(
                 "$maxTemp°",

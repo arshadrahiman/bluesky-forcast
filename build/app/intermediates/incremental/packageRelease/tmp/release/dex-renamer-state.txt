@@ -1,4 +1,4 @@
-#Fri Jun 14 15:28:58 IST 2024
+#Fri Jun 14 15:47:57 IST 2024
 base.0=/Users/arshadulrahman/development/personal/webtree-forcast/build/app/intermediates/dex/release/minifyReleaseWithR8/classes.dex
 path.0=classes.dex
 renamed.0=classes.dex

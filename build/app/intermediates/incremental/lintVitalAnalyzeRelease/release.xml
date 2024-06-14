@@ -1,0 +1,40 @@
+<variant
+    name="release"
+    package="com.webtreeapp.webtree_forcast"
+    minSdkVersion="21"
+    targetSdkVersion="34"
+    shrinking="true"
+    mergedManifest="/Users/arshadulrahman/development/personal/webtree-forcast/build/app/intermediates/merged_manifest/release/AndroidManifest.xml"
+    proguardFiles="/Users/arshadulrahman/development/personal/webtree-forcast/build/app/intermediates/default_proguard_files/global/proguard-android.txt-7.3.0:/Users/arshadulrahman/development/flutter/packages/flutter_tools/gradle/flutter_proguard_rules.pro:proguard-rules.pro"
+    partialResultsDir="/Users/arshadulrahman/development/personal/webtree-forcast/build/app/intermediates/lint_vital_partial_results/release/out"
+    desugaredMethodsFiles="/Users/arshadulrahman/.gradle/caches/transforms-3/784c6da97e8bad388c7f62e0b4ac5803/transformed/D8BackportedDesugaredMethods.txt">
+  <buildFeatures
+      namespacing="REQUIRED"/>
+  <sourceProviders>
+    <sourceProvider
+        manifest="src/main/AndroidManifest.xml"
+        javaDirectories="src/main/java:src/main/kotlin"
+        resDirectories="src/main/res"
+        assetsDirectories="src/main/assets"/>
+    <sourceProvider
+        manifest="src/release/AndroidManifest.xml"
+        javaDirectories="src/release/java:src/release/kotlin"
+        resDirectories="src/release/res"
+        assetsDirectories="src/release/assets"/>
+  </sourceProviders>
+  <testSourceProviders>
+  </testSourceProviders>
+  <testFixturesSourceProviders>
+  </testFixturesSourceProviders>
+  <manifestPlaceholders>
+    <placeholder
+        name="applicationName"
+        value="android.app.Application" />
+  </manifestPlaceholders>
+  <mainArtifact
+      classOutputs="/Users/arshadulrahman/development/personal/webtree-forcast/build/app/intermediates/javac/release/classes:/Users/arshadulrahman/development/personal/webtree-forcast/build/app/tmp/kotlin-classes/release:/Users/arshadulrahman/development/personal/webtree-forcast/build/app/kotlinToolingMetadata:/Users/arshadulrahman/development/personal/webtree-forcast/build/app/intermediates/compile_and_runtime_not_namespaced_r_class_jar/release/R.jar"
+      applicationId="com.webtreeapp.webtree_forcast"
+      generatedSourceFolders="/Users/arshadulrahman/development/personal/webtree-forcast/build/app/generated/ap_generated_sources/release/out:/Users/arshadulrahman/development/personal/webtree-forcast/build/app/generated/aidl_source_output_dir/release/out:/Users/arshadulrahman/development/personal/webtree-forcast/build/app/generated/source/buildConfig/release:/Users/arshadulrahman/development/personal/webtree-forcast/build/app/generated/renderscript_source_output_dir/release/out"
+      generatedResourceFolders="/Users/arshadulrahman/development/personal/webtree-forcast/build/app/generated/res/rs/release:/Users/arshadulrahman/development/personal/webtree-forcast/build/app/generated/res/resValues/release">
+  </mainArtifact>
+</variant>

@@ -1,0 +1,12 @@
+io.flutter.plugins.sharedpreferences.shared_preferences_android-jetified-window-java-1.0.0-beta04-0 /Users/arshadulrahman/.gradle/caches/transforms-3/94c2375d61d7c610c1df736b393ed4c1/transformed/jetified-window-java-1.0.0-beta04/res
+io.flutter.plugins.sharedpreferences.shared_preferences_android-core-1.6.0-1 /Users/arshadulrahman/.gradle/caches/transforms-3/c23dd619ff06973f93aa7791ca8d4dff/transformed/core-1.6.0/res
+io.flutter.plugins.sharedpreferences.shared_preferences_android-jetified-annotation-experimental-1.1.0-2 /Users/arshadulrahman/.gradle/caches/transforms-3/c793437c31ee6fad25f4621f46eeb044/transformed/jetified-annotation-experimental-1.1.0/res
+io.flutter.plugins.sharedpreferences.shared_preferences_android-jetified-window-1.0.0-beta04-3 /Users/arshadulrahman/.gradle/caches/transforms-3/cfd05f65a3eae03d898692d12f4922d8/transformed/jetified-window-1.0.0-beta04/res
+io.flutter.plugins.sharedpreferences.shared_preferences_android-main-4 /Users/arshadulrahman/.pub-cache/hosted/pub.dev/shared_preferences_android-2.2.3/android/src/main/res
+io.flutter.plugins.sharedpreferences.shared_preferences_android-release-5 /Users/arshadulrahman/.pub-cache/hosted/pub.dev/shared_preferences_android-2.2.3/android/src/release/res
+io.flutter.plugins.sharedpreferences.shared_preferences_android-pngs-6 /Users/arshadulrahman/development/personal/webtree-forcast/build/shared_preferences_android/generated/res/pngs/release
+io.flutter.plugins.sharedpreferences.shared_preferences_android-resValues-7 /Users/arshadulrahman/development/personal/webtree-forcast/build/shared_preferences_android/generated/res/resValues/release
+io.flutter.plugins.sharedpreferences.shared_preferences_android-rs-8 /Users/arshadulrahman/development/personal/webtree-forcast/build/shared_preferences_android/generated/res/rs/release
+io.flutter.plugins.sharedpreferences.shared_preferences_android-mergeReleaseResources-9 /Users/arshadulrahman/development/personal/webtree-forcast/build/shared_preferences_android/intermediates/incremental/release/mergeReleaseResources/merged.dir
+io.flutter.plugins.sharedpreferences.shared_preferences_android-mergeReleaseResources-10 /Users/arshadulrahman/development/personal/webtree-forcast/build/shared_preferences_android/intermediates/incremental/release/mergeReleaseResources/stripped.dir
+io.flutter.plugins.sharedpreferences.shared_preferences_android-merged_res-11 /Users/arshadulrahman/development/personal/webtree-forcast/build/shared_preferences_android/intermediates/merged_res/release
